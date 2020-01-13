@@ -275,7 +275,7 @@ class ResponseParser(object):
                 return True
 
             body = response['body'].strip()
-            return body.startswith(b'<html>') or not body
+            return body.startswith('<html>') or not body
 
     def _do_generic_error_parse(self, response):
         # There's not really much we can do when we get a generic
